@@ -11,9 +11,13 @@
 	<file path="catalog/view/theme/journal2/template/common/" name="header.tpl" error="log">
 		<operation error="skip">
 			<search position="before"><![CDATA[<?php foreach ($scripts as $script) { ?>]]></search>
-			<add><![CDATA[
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=greek" rel="stylesheet">
-			]]></add>
+			<add><![CDATA[<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=greek" rel="stylesheet">]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/journal2/template/journal2/quickview/" name="quickview.tpl" error="log">
+		<operation error="skip">
+			<search position="before"><![CDATA[<?php $this->journal2->minifier->addStyle('catalog/view/theme/journal2/css/j-strap.css'); ?>]]></search>
+			<add><![CDATA[<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=greek" rel="stylesheet">]]></add>
 		</operation>
 	</file>
 </modification>
