@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification
+	xmlns="https://github.com/vqmod/vqmod"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://github.com/vqmod/vqmod https://raw.githubusercontent.com/vqmod/vqmod/master/vqmod.xsd">
+	>
+	<id><![CDATA[[VQMOD] Journal 2 - Advanced Opencart Theme: Add extra Google Fonts]]></id>
+	<version>1.0.0</version>
+	<vqmver>2.6.3</vqmver>
+	<author>kanenas.net (aka Nikolas Branis) - nbran@kanenas.net</author>
+	<file path="catalog/view/theme/journal2/template/common/" name="header.tpl" error="log">
+		<operation error="skip">
+			<search position="before"><![CDATA[<?php foreach ($scripts as $script) { ?>]]></search>
+			<add><![CDATA[
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=greek" rel="stylesheet">
+			]]></add>
+		</operation>
+	</file>
+</modification>
